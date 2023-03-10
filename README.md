@@ -27,13 +27,13 @@ import jsFileDownloader from 'file-downloader--js';
 
 ```
 
-## Usage
+## How to use it in your project
 
-## How to use it
+#### use this function in click event or any event
 
 ```javascript
 jsFileDownloader(url, fileName);
-````
+```
 
 ### if you want to see the progress of the download, you can pass a function as the third parameter
 
@@ -41,19 +41,34 @@ jsFileDownloader(url, fileName);
 jsFileDownloader(url, fileName, (progress) => {
   console.log(progress);
 });
-````
+```
+
+### if you want to use it with async/await
 
 ```javascript
-    try {
-      const response = await jsFileDownloader(url, name, (progress) => {
-       console.log(progress);
-      }
-      );
-      console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
-````
+try {
+  const response = await jsFileDownloader(url, name, (progress) => {
+    console.log(progress);
+  });
+  console.log(response);
+} catch (error) {
+  console.log(error);
+}
+```
+
+### if you want to use it with promise
+
+```javascript
+jsFileDownloader(url, name, (progress) => {
+  console.log(progress);
+})
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+```
 
 ## Parameters
 
@@ -83,12 +98,12 @@ jsFileDownloader(url, fileName, (progress) => {
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## Author
 
 - \*\*[Md Wahiduzzaman Emon]
+
+## Contributing
+
+- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+* Please make sure to update tests as appropriate.

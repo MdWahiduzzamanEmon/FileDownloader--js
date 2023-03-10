@@ -1,37 +1,41 @@
 {
   "name": "file-downloader--js",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": false,
-  "description": "Gradient color generator",
+  "description": "This is a simple file downloader package for javascript",
   "author": "Md Wahiduzzaman Emon",
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "keywords": [
-    "react",
-    "color generator",
-    "gradient",
-    "color",
-    "gradient color",
-    "gradient color generator",
-    "react gradient color generator",
+    "file",
+    "downloader",
     "javascript",
-    "javascript gradient color generator",
-    "javascript gradient color",
-    "javascript color generator",
-	"javascript color",
-	"javascript gradient",
-	"javascript gradient color generator",
-	"javascript gradient color"
+    "npm",
+    "package",
+    "js",
+    "download",
+    "file-downloader",
+    "file-downloader-js",
+    "file-downloader-react",
+    "file-downloader-vue",
+    "file-downloader-angular",
+    "file-downloader-node",
+    "file-downloader-jquery",
+    "react",
+    "vue",
+    "angular",
+    "solid-js",
+    "file-downloader-solid-js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MdWahiduzzamanEmon/emon-Gradient_Color_NPM_Package"
+    "url": "git+https://github.com/MdWahiduzzamanEmon/FileDownloader--js"
   },
   "bugs": {
-    "url": "https://github.com/MdWahiduzzamanEmon/emon-Gradient_Color_NPM_Package/issues"
+    "url": "https://github.com/MdWahiduzzamanEmon/FileDownloader--js/issues"
   },
-  "homepage": "https://github.com/MdWahiduzzamanEmon/emon-Gradient_Color_NPM_Package#readme"
+  "homepage": "https://github.com/MdWahiduzzamanEmon/FileDownloader--js#readme"
 }
