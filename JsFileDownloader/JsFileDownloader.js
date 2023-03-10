@@ -38,6 +38,7 @@ If an error occurs, catches the error and returns it.
 // Functionality:
 
 // Tries to download a file from the given URL
+// Checks if the url contains "http://" and replaces it with "https://"
 // Initializes the necessary variables and arrays
 // Reads the response body in chunks
 // Calculates the download progress and calls the progress function with the progress value
