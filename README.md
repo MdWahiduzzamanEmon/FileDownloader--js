@@ -20,32 +20,27 @@ npm install file-downloader--js
 yarn add file-downloader--js
 ```
 
-```
 ## Importing
 
 ```
-
 import jsFileDownloader from 'file-downloader--js';
 
 ```
 
 ## Usage
 
-```
-
 ## How to use it
 
 ```javascript
 jsFileDownloader(url, fileName);
-```
+````
+
+### if you want to see the progress of the download, you can pass a function as the third parameter
 
 ```javascript
- if you want to see the progress of the download, you can pass a function as the third parameter
-
-jsFileDownloader(url, fileName, progress);
-
-```
-
+jsFileDownloader(url, fileName, (progress) => {
+  console.log(progress);
+});
 ````
 
 ```javascript
@@ -62,11 +57,11 @@ jsFileDownloader(url, fileName, progress);
 
 ## Parameters
 
-| Parameter | Type     | Description                                               |
-| --------- | -------- | --------------------------------------------------------- |
-| url       | string   | The URL of the file to be downloaded                      |
-| fileName  | string   | The name with which the downloaded file will be saved     |
-| progress  | function | A function that will be called with the download progress |
+| Parameter | Type             | Description                                               |
+| --------- | ---------------- | --------------------------------------------------------- |
+| url\*     | string(required) | The URL of the file to be downloaded                      |
+| fileName  | string           | The name with which the downloaded file will be saved     |
+| progress  | function         | A function that will be called with the download progress |
 
 ## Functionality
 

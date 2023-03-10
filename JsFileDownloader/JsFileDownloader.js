@@ -53,6 +53,7 @@ If an error occurs, catches the error and returns it.
 
 export const jsFileDownloader = async (url, fileName, progress) => { // Define the async function "jsFileDownloader"
   try {
+    if(!url) throw new Error('URL is required'); // Check if url is provided
       let newUrl = url; // Initialize newUrl variable
       // /if url in http convert to https
       if (newUrl.includes('http://')) { // Check if url contains "http://"
