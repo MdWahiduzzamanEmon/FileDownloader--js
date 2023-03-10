@@ -1,5 +1,5 @@
 {
-  "name": "@js/file_downloader~emon",
+  "name": "@js/file_downloader--emon",
   "version": "1.0.0",
   "private": false,
   "description": "This is a simple file downloader package for javascript",
