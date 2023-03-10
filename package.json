@@ -1,6 +1,6 @@
 {
-  "name": "@js/file_downloader--emon",
-  "version": "1.0.0",
+  "name": "js-file_downloader--emon",
+  "version": "1.0.1",
   "private": false,
   "description": "This is a simple file downloader package for javascript",
   "author": "Md Wahiduzzaman Emon",
