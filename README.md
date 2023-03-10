@@ -13,17 +13,17 @@ JavaScript File Downloader is an open-source library that allows you to download
 To use JavaScript File Downloader in your project, you can download the jsFileDownloader.js file and include it in your project. Alternatively, you can install it using npm:
 
 ```bash
-npm install file-downloader--js
+npm install @js/file_downloader~emon
 ```
 
 ```bash
-yarn add file-downloader--js
+yarn add @js/file_downloader~emon
 ```
 
 ## Importing
 
 ```
-import jsFileDownloader from 'file-downloader--js';
+import jsFileDownloader from '@js/file_downloader~emon';
 
 ```
 

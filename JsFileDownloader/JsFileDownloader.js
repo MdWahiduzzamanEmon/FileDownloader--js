@@ -56,8 +56,10 @@ export const jsFileDownloader = async (url, fileName, progress) => { // Define t
     if(!url) throw new Error('URL is required'); // Check if url is provided
       let newUrl = url; // Initialize newUrl variable
       // /if url in http convert to https
-      if (newUrl.includes('http://')) { // Check if url contains "http://"
-          newUrl = newUrl.replace('http://', 'https://'); // Replace "http://" with "https://"
+      if (newUrl?.includes('http://')) { // Check if url contains "http://"
+          newUrl = newUrl?.replace('http://', 'https://'); // Replace "http://" with "https://"
+      }else{
+        newUrl = newUrl?.replace('https://', 'https://'); // Replace "https://" with "https://"
       }
       const response = await fetch(newUrl); // Fetch response from url
 
