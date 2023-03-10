@@ -100,7 +100,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Author
 
-- \*\*[Md Wahiduzzaman Emon]
+- ![Avro copy](https://user-images.githubusercontent.com/83487057/224381702-fc4a421d-be02-42ee-8865-e8e9b3aafeaf.png)
+- [Md Wahiduzzaman Emon]
 
 ## Contributing
 
