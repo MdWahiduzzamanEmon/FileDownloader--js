@@ -100,8 +100,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Author
 
-- <img align="left" src="https://user-images.githubusercontent.com/83487057/224382756-653250fb-cd86-4c19-aa5e-274a94bef455.png" alt="md-wahiduzzaman-emon" height="30" width="40" />
-- [Md Wahiduzzaman Emon]
+- <img align="right" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg]" alt="md-wahiduzzaman-emon" height="40" width="40" /> [Md Wahiduzzaman Emon]
 
 ## Contributing
 
