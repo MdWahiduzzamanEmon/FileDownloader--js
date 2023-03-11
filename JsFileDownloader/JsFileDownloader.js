@@ -53,14 +53,28 @@ If an error occurs, catches the error and returns it.
 
 export const jsFileDownloader = async (url, fileName, progress) => { // Define the async function "jsFileDownloader"
   try {
-    if(!url) throw new Error('URL is required'); // Check if url is provided
+    //if not rl return error with message and status 400 
+    if(!url) return {message: 'URL is required', status: 400}; // Return error if url is not provided
+        
       let newUrl = url; // Initialize newUrl variable
-      // /if url in http convert to https
-      if (newUrl?.includes('http://')) { // Check if url contains "http://"
-          newUrl = newUrl?.replace('http://', 'https://'); // Replace "http://" with "https://"
-      }else{
-        newUrl = newUrl?.replace('https://', 'https://'); // Replace "https://" with "https://"
-      }
+      // /if url in http convert to https.check user url is http or https
+        const recentHref = window.location.href; // Get current URL
+        const recentProtocol = recentHref.split('://')[0]; // Get protocol of current URL
+        if (recentProtocol === 'http' && url.includes('http://')) { // Check if current protocol is http and url contains http://
+            newUrl = url.replace('http://', 'http://'); // Replace http:// with https://
+        }
+        else if (recentProtocol === 'https' && url.includes('http://')) { // Check if current protocol is https and url contains http://
+            newUrl = url.replace('http://', 'https://'); // Replace http:// with https://
+        }
+        else if (recentProtocol === 'http' && url.includes('https://')) { // Check if current protocol is http and url contains https://
+            newUrl = url.replace('https://', 'http://'); // Replace https:// with http://
+        }
+        else if (recentProtocol === 'https' && url.includes('https://')) { // Check if current protocol is https and url contains https://
+            newUrl = url.replace('https://', 'https://'); // Replace https:// with https://
+        }else{
+            return {message: 'URL is not valid', status: 400}; // Return error if url is not valid
+        }
+        
       const response = await fetch(newUrl); // Fetch response from url
 
       const reader = response.body.getReader(); // Read body of response
