@@ -94,6 +94,13 @@ jsFileDownloader(url, name, (progress) => {
 - If successful, returns the downloaded file
 - If an error occurs, returns the error message.
 
+## Response
+
+| Status | Description                      |
+| ------ | -------------------------------- |
+| 200    | OK                               |
+| 400    | URL is required/URL is not valid |
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
